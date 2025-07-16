@@ -1,3 +1,5 @@
-export default function SgtSausage() {
-  return <h2>Sgt Sausage</h2>;
-} 
+function SgtSausage() {
+    return <h2>Babylon Consulting</h2>;
+}
+
+export default SgtSausage; 

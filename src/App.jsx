@@ -28,18 +28,14 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className="container">
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/anura" element={<Anura />} />
-            <Route path="/babylon" element={<Babylon />} />
-            <Route path="/sgt-sausage" element={<SgtSausage />} />
-            <Route path="/work" element={<Work />} />
-          </Routes>
-        </main>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<div className="container"><main><About /></main></div>} />
+        <Route path="/anura" element={<div className="container"><main><Anura /></main></div>} />
+        <Route path="/babylon" element={<div className="container"><main><Babylon /></main></div>} />
+        <Route path="/sgt-sausage" element={<div className="container"><main><SgtSausage /></main></div>} />
+        <Route path="/work" element={<div className="container"><main><Work /></main></div>} />
+      </Routes>
     </Router>
   );
 }
