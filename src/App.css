@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #f7deba;
   margin: 0;
   padding: 0;
 }
@@ -27,6 +27,8 @@ body {
   padding: 1rem 2rem;
   box-sizing: border-box;
   z-index: 100;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -112,4 +114,8 @@ body {
   justify-content: center;
   color: white;
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.meek-highlight {
+  color: #EE5625;
 }
