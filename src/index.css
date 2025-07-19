@@ -158,3 +158,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  .business-card {
+    width: 95vw;
+    height: auto;
+    padding: 12px 8px 12px 8px;
+    margin: 8px auto;
+    font-size: 0.95em;
+  }
+  .checkered {
+    flex-direction: column;
+  }
+  body {
+    font-size: 1em;
+    overflow-x: hidden;
+  }
+}

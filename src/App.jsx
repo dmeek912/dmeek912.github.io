@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -9,12 +9,25 @@ import SgtSausage from './pages/SgtSausage';
 import Contact from './pages/Contact';
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  // Close menu on route change
+  const location = useLocation();
+  useEffect(() => { setMenuOpen(false); }, [location]);
   return (
     <header className="header">
       <div className="header-left">
         <Link to="/" className="site-name">drexel<span className="meek-highlight">meek</span>.com</Link>
       </div>
-      <nav className="header-right">
+      <button
+        className="hamburger"
+        aria-label="Toggle navigation menu"
+        onClick={() => setMenuOpen(m => !m)}
+      >
+        <span className="hamburger-bar"></span>
+        <span className="hamburger-bar"></span>
+        <span className="hamburger-bar"></span>
+      </button>
+      <nav className={`header-right${menuOpen ? ' open' : ''}`}>
         <Link to="/about">About Me</Link>
         <Link to="/anura">Anura</Link>
         <Link to="/babylon">Babylon Consulting</Link>
