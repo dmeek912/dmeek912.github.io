@@ -13,7 +13,7 @@ export default function About() {
         </div>
         <div className="about-image-section">
           <img 
-            src="./about/drexel-boat.jpg" 
+            src="/about/drexel-boat.jpg" 
             alt="Drexel on a boat" 
             className="about-image"
             loading="lazy"
