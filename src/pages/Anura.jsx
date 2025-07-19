@@ -22,7 +22,7 @@ function Anura() {
            <div className="anura-about-text">
              <h2>About Anura</h2>
              <p>The silent precision of a diving frog. The splendor of a golden toad. Anura is a high-performance diving gear brand built for those who move with purpose beneath the surface. Informed by the scientific order of amphibians, Anura fuses sleek design with cutting-edge functionality.</p>
-             <p>Gear that feels natural, streamlined, and intuitive in the water. Advanced materials, minimalist aesthetics - every detail is engineered for depth, clarity, and control. Anura strives to be more than just gear, but also an enhanced extension of the diver.</p>
+             <p>Gear that feels natural, streamlined, and intuitive in the water. Advanced materials, minimalist aesthetics - every detail is engineered for depth, clarity, and control. Because Anura strives to be more than just gear: it becomes an extension of the diver.</p>
            </div>
            <div className="about-image">
              <img src="/anura/anura-mockup.JPEG" alt="Anura Diving Gear" className="about-img" />
@@ -41,8 +41,8 @@ function Anura() {
              <p>Engineered for maximum efficiency and control in underwater environments, ensuring every movement is precise and purposeful.</p>
            </div>
            <div className="feature-card">
-             <h3>Natural Design</h3>
-             <p>Taking inspiration from amphibian biology, our gear feels like an integrated part of the diver's body, taking underwater mobility to the next level.</p>
+             <h3>Instinctive Design</h3>
+             <p>Taking inspiration from amphibian biology, our gear enhances the diver's natural capabilities, taking underwater mobility to the next level.</p>
            </div>
            <div className="feature-card">
              <h3>Advanced Materials</h3>
