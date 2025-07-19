@@ -27,7 +27,7 @@ export default function Contact() {
             {renderCheckered(10, false)}
             {renderCheckered(10, true)}
           </div>
-          <img src="/drexel-logo.png" alt="Drexel Logo" style={{ position: 'absolute', bottom: 18, right: 28, height: '2.2em', width: 'auto' }} />
+          <img src="/drexel-logo2.png" alt="Drexel Logo" style={{ position: 'absolute', bottom: 18, right: 28, height: '2.2em', width: 'auto' }} />
         </div>
         {/* Second business card (beige) */}
         <div className="business-card beige alfarn" style={{ alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
