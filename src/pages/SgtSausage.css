@@ -277,20 +277,59 @@
   .hero-title {
     font-size: 2rem;
   }
-  
   .sgtsausage-hero {
     padding: 2rem 1rem;
   }
-  
   .container {
-    padding: 1rem;
+    max-width: none !important;
+    margin: 0 auto !important;
+    width: calc(100vw - 2rem) !important;
+    padding: 0.5rem;
+    box-sizing: border-box;
   }
-  
+  .about-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .sgtsausage-about {
+    padding: 2rem 0;
+    overflow: hidden;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .sgtsausage-about-text {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .sgtsausage-about-text h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .sgtsausage-about-text p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  .about-img,
+  .sgtsausage-portfolio .portfolio-img,
+  .sgtsausage-logo {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .services-grid,
+  .sgtsausage-portfolio .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
   .service-card {
     padding: 1.5rem;
   }
-  
-  .portfolio-overlay {
+  .sgtsausage-portfolio .portfolio-overlay {
     padding: 1rem;
+    transform: translateY(0) !important;
+    background: linear-gradient(transparent, rgba(139, 69, 19, 0.95));
   }
 } 

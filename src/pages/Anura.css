@@ -277,20 +277,59 @@
   .hero-title {
     font-size: 2rem;
   }
-  
   .anura-hero {
     padding: 2rem 1rem;
   }
-  
   .container {
-    padding: 1rem;
+    max-width: none !important;
+    margin: 0 auto !important;
+    width: calc(100vw - 2rem) !important;
+    padding: 0.5rem;
+    box-sizing: border-box;
   }
-  
+  .about-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .anura-about {
+    padding: 2rem 0;
+    overflow: hidden;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .anura-about-text {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .anura-about-text h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .anura-about-text p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  .about-img,
+  .portfolio-img,
+  .anura-logo {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .features-grid,
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
   .feature-card {
     padding: 1.5rem;
   }
-  
   .portfolio-overlay {
     padding: 1rem;
+    transform: translateY(0) !important;
+    background: linear-gradient(transparent, rgba(30, 60, 114, 0.95));
   }
 } 

@@ -1,0 +1,224 @@
+/* Contact Page Styles */
+
+.contact-container {
+  background: #AABAB5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.business-card {
+  width: 370px;
+  height: 210px;
+  background: #0A332C;
+  color: #f7deba;
+  box-shadow: 24px 40px 48px rgba(10, 51, 44, 0.25), 4px 8px 16px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 28px 18px 28px;
+  margin: 16px;
+  position: relative;
+}
+
+.business-card.beige {
+  background: #f7deba;
+  color: #0A332C;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.business-card .name {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.business-card .role {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.business-card .contact {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.business-card .email {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.business-card .dm {
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-right: 8px;
+}
+
+.business-card .name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.business-card .role {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.business-card .contact {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.business-card .email {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.business-card .dm-large {
+  font-size: 3.2em;
+  font-weight: bold;
+  letter-spacing: -2px;
+  margin-bottom: 0.2em;
+}
+
+.business-card .drexel-meek {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.checkered {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.checkered.spaced {
+  margin: 12px 0 0 0;
+}
+
+.checkered-square {
+  width: 24px;
+  height: 24px;
+  background: #f7deba;
+  margin-right: 0;
+}
+
+.business-card.beige .checkered-square {
+  background: #0A332C;
+}
+
+.checkered-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 0;
+}
+
+.business-card-logo {
+  position: absolute;
+  bottom: 18px;
+  right: 28px;
+  height: 2.2em;
+  width: auto;
+}
+
+.business-card-center {
+  padding: 24px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.business-card-logo-large {
+  height: 4em;
+  width: auto;
+  margin-bottom: 0.2em;
+}
+
+.business-card-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1rem;
+  }
+  
+  .contact-cards-wrapper {
+    gap: 24px;
+  }
+  
+  .business-card {
+    width: 320px;
+    height: 180px;
+    padding: 20px 24px 16px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0.5rem;
+  }
+  
+  .business-card {
+    width: 95vw;
+    max-width: 320px;
+    height: auto;
+    min-height: 160px;
+    padding: 16px 20px 12px 20px;
+  }
+  
+  .business-card .name {
+    font-size: 1.6em;
+  }
+  
+  .business-card .role {
+    font-size: 0.9em;
+  }
+  
+  .business-card .contact,
+  .business-card .email {
+    font-size: 0.9em;
+  }
+  
+  .business-card .drexel-meek {
+    font-size: 1.6em;
+  }
+  
+  .business-card-logo {
+    height: 1.8em;
+    bottom: 12px;
+    right: 20px;
+  }
+  
+  .business-card-logo-large {
+    height: 3em;
+  }
+  
+  .checkered-square {
+    width: 20px;
+    height: 20px;
+  }
+} 

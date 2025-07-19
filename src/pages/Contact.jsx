@@ -1,3 +1,5 @@
+import './Contact.css';
+
 export default function Contact() {
   // Helper to render checkered row
   const renderCheckered = (count, reverse) => (
@@ -13,28 +15,28 @@ export default function Contact() {
   );
 
   return (
-    <div style={{ background: '#AABAB5', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '32px' }}>
-        {/* First business card (dark) */}
+    <div className="contact-container">
+      <div className="contact-cards-wrapper">
+        {/* First business card */}
         <div className="business-card alfarn">
           <div>
-            <div className="name" style={{ fontSize: '2em', fontWeight: 'bold' }}>DREXEL MEEK</div>
-            <div className="role" style={{ fontWeight: 'bold', fontSize: '1.1em' }}>GRAPHIC DESIGNER</div>
+            <div className="name">DREXEL MEEK</div>
+            <div className="role">GRAPHIC DESIGNER</div>
             <div className="contact">(405) 513-2161</div>
             <div className="email">DREXELMEEK912@GMAIL.COM</div>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 0, lineHeight: 0 }}>
+          <div className="checkered-container">
             {renderCheckered(10, false)}
             {renderCheckered(10, true)}
           </div>
-          <img src="/drexel-logo2.png" alt="Drexel Logo" style={{ position: 'absolute', bottom: 18, right: 28, height: '2.2em', width: 'auto' }} />
+          <img src="/drexel-logo2.png" alt="Drexel Logo" className="business-card-logo" />
         </div>
-        {/* Second business card (beige) */}
-        <div className="business-card beige alfarn" style={{ alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+        {/* Second business card */}
+        <div className="business-card beige alfarn">
           {renderCheckered(13, true)}
-          <div style={{ padding: '24px 0', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/drexel-logo.png" alt="Drexel Logo" style={{ height: '4em', width: 'auto', marginBottom: '0.2em' }} />
+          <div className="business-card-center">
+            <div className="business-card-logo-wrapper">
+              <img src="/drexel-logo.png" alt="Drexel Logo" className="business-card-logo-large" />
               <span className="drexel-meek">DREXEL<br />MEEK</span>
             </div>
           </div>

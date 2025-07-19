@@ -182,6 +182,14 @@ body {
   transition: all 0.3s;
 }
 
+body, html, #root, .app-container, .main-content {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 @media (max-width: 600px) {
   .header {
     flex-direction: row;
@@ -224,27 +232,24 @@ body {
     min-width: 80px;
   }
   .masthead {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     min-height: 200px;
-    height: 40vh;
-    position: relative;
-    overflow: hidden;
+    height: auto;
+    position: static;
+    overflow: visible;
+    padding: 0;
   }
   .masthead-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    height: auto;
+    min-height: 200px;
+    display: block;
     object-fit: cover;
     object-position: center;
-    display: block;
     max-width: 100vw;
-  }
-  body, html, #root, .app-container, .main-content {
-    max-width: 100vw;
-    overflow-x: hidden;
+    position: static;
   }
   .hamburger {
     display: flex;

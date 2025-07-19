@@ -81,7 +81,7 @@ function Anura() {
          <div className="philosophy-content">
            <div className="philosophy-text">
              <h2>Our Philosophy</h2>
-             <p>Having noticed the graceful precision of amphibians in motion, Anura represents the perfect harmony between natural design and human engineering. Just as amphibians have evolved to thrive in both aquatic and terrestrial environments, our gear enables divers to move with the same effortless grace beneath the surface.</p>
+             <p>Having noticed the graceful precision of amphibians in motion, Anura represents the perfect harmony between natural design and human engineering. Just as amphibians have evolved to thrive in both aquatic and terrestrial environments, our gear enables divers to move with the same effortless elegance in the water.</p>
              <p>We believe that the best diving equipment should feel like a natural extension of the body, enhancing rather than hindering the diver's connection with the underwater world.</p>
            </div>
          </div>

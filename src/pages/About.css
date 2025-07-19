@@ -135,17 +135,22 @@
 @media (max-width: 480px) {
   .about-content {
     padding: 1.5rem;
+    width: 100vw;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  
   .about-greeting {
     font-size: 2rem;
   }
-  
   .about-name {
     font-size: 1.5rem;
   }
-  
   .about-description {
     font-size: 0.95rem;
+  }
+  .about-image {
+    max-width: 100%;
   }
 } 
