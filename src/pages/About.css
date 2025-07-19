@@ -1,0 +1,149 @@
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.about-content {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 4rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0A332C, #EE5625);
+}
+
+.about-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-greeting {
+  font-family: 'Alfarn', 'Fira Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #0A332C;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.about-name {
+  font-family: 'Fira Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.about-description {
+  font-family: 'Fira Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+  font-weight: 400;
+}
+
+.about-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem;
+  }
+  
+  .about-greeting {
+    font-size: 3rem;
+  }
+  
+  .about-name {
+    font-size: 2.2rem;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+  
+  .about-content {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .about-greeting {
+    font-size: 2.5rem;
+  }
+  
+  .about-name {
+    font-size: 1.8rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 1.5rem;
+  }
+  
+  .about-greeting {
+    font-size: 2rem;
+  }
+  
+  .about-name {
+    font-size: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 0.95rem;
+  }
+} 

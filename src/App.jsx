@@ -24,18 +24,34 @@ function Header() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-divider"></div>
+        <p className="footer-text">Copyright © 2025 drexelmeek.com</p>
+      </div>
+    </footer>
+  );
+}
+
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div className="container"><main><About /></main></div>} />
-        <Route path="/anura" element={<div className="container"><main><Anura /></main></div>} />
-        <Route path="/babylon" element={<div><main><Babylon /></main></div>} />
-        <Route path="/sgt-sausage" element={<div className="container"><main><SgtSausage /></main></div>} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="app-container">
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<div><main><About /></main></div>} />
+            <Route path="/anura" element={<div><main><Anura /></main></div>} />
+            <Route path="/babylon" element={<div><main><Babylon /></main></div>} />
+            <Route path="/sgt-sausage" element={<div><main><SgtSausage /></main></div>} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
