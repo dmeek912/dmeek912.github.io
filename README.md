@@ -1,12 +1,74 @@
-# React + Vite
+# Drexel Meek Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based portfolio website showcasing Drexel Meek's work and projects.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the development server:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deployment
+
+This project is configured to work with both GitHub Pages and custom domains using relative paths.
+
+### GitHub Pages Deployment
+
+The deployment is automated via GitHub Actions. When you push to the main branch, it will automatically build and deploy.
+
+**Manual Deployment:**
+```bash
+npm run build
+npm run deploy
+```
+
+### Custom Domain Deployment
+
+When you get a custom domain, you can easily switch configurations:
+
+```bash
+# Switch to custom domain configuration
+node switch-config.js customDomain
+
+# Build and deploy
+npm run build
+```
+
+### Configuration Switching
+
+The project includes a utility script to switch between deployment configurations:
+
+```bash
+# For GitHub Pages
+node switch-config.js githubPages
+
+# For custom domain
+node switch-config.js customDomain
+```
+
+### GitHub Pages Configuration
+
+1. Go to your repository settings
+2. Navigate to "Pages" in the sidebar
+3. Set the source to "GitHub Actions"
+4. The workflow will automatically deploy when you push to main
+
+The site will be available at: `https://dmeek912.github.io/drexel-portfolio-website/`
+
+## Project Structure
+
+- `src/pages/` - React components for each page
+- `public/` - Static assets and images
+- `src/App.jsx` - Main application component with routing
+- `switch-config.js` - Utility script for switching deployment configurations
+
+## Features
+
+- ✅ Works on both GitHub Pages and custom domains
+- ✅ Client-side routing with React Router
+- ✅ Automatic deployment via GitHub Actions
+- ✅ Responsive design
+- ✅ Image optimization
