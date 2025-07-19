@@ -2,10 +2,7 @@ import React from 'react';
 import './SgtSausage.css';
 
 function SgtSausage() {
-  const description = `As a member of the US Military-grade Comedy Team, I take pride in delivering humor and even bolder laughs to my customers. Our services include top-tier charcuterie and military-grade comedy. We blend bold flavors with the perfect amount of laughter to create a full-on meat-tainment experience.
-
-SGT Sausage is a cured meat subscription service with a mission to bring bold flavors and even bolder laughs to your doorstep. Our team of experts will work closely with you to understand your needs and preferences, and deliver the perfect combination of charcuterie and comedy that you'll love.`;
-
+  // Removed the description variable and placed its content directly in the JSX
   return (
     <div className="sgtsausage-page">
       {/* Hero Section */}
@@ -21,9 +18,10 @@ SGT Sausage is a cured meat subscription service with a mission to bring bold fl
       <section className="sgtsausage-about">
         <div className="container">
           <div className="about-content">
-            <div className="about-text">
+            <div className="sgtsausage-about-text">
               <h2>About SGT Sausage</h2>
-              <p>{description}</p>
+              <p>As a member of the US Military-grade Comedy Team, I take pride in delivering humor and even bolder laughs to my customers. Our services include top-tier charcuterie and military-grade comedy. We blend bold flavors with the perfect amount of laughter to create a full-on meat-tainment experience.</p>
+              <p>SGT Sausage is a cured meat subscription service with a mission to bring bold flavors and even bolder laughs to your doorstep. Our team of experts will work closely with you to understand your needs and preferences, and deliver the perfect combination of charcuterie and comedy that you'll love.</p>
             </div>
             <div className="about-image">
               <img src="/sgtsausage/sgtsausage-artboard.JPEG" alt="Sgt. Sausage Artboard" className="about-img" />

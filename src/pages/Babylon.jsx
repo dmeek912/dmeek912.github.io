@@ -5,12 +5,6 @@ import './Babylon.css';
  * Babylon Consulting page for the portfolio website.
  */
 
-const description = `Where Strategy Meets Communication.
-
-Babylon Consulting is a professional firm rooted in the story of human connection. The Tower of Babel's legendary tale of ancient communication serves to inspire the weaving of a modern vision of clarity, strategy, and insight.
-
-In a world often clouded by noise, Babylon helps organizations align their message, bridge internal gaps, and build structures that last. With a visual identity grounded in timeless forms and a narrative that honors the power in language, Babylon Consulting redefines what it means to truly understand and be understood.`;
-
 export default function Babylon() {
   return (
     <div className="babylon-page">
@@ -27,9 +21,10 @@ export default function Babylon() {
       <section className="babylon-about">
         <div className="container">
           <div className="about-content">
-            <div className="about-text">
+            <div className="babylon-about-text">
               <h2>About Babylon</h2>
-              <p>{description}</p>
+              <p>Babylon Consulting is a professional firm rooted in the story of human connection. The Tower of Babel's legendary tale of ancient communication serves to inspire the weaving of a modern vision of clarity, strategy, and insight.</p>
+              <p>In a world often clouded by noise, Babylon helps organizations align their message, bridge internal gaps, and build structures that last. With a visual identity grounded in timeless forms and a narrative that honors the power in language, Babylon Consulting redefines what it means to truly understand and be understood.</p>
             </div>
             <div className="about-image">
               <img src="/babylon/babylon-consulting.JPEG" alt="Babylon Consulting" className="about-img" />
@@ -53,7 +48,7 @@ export default function Babylon() {
             </div>
             <div className="service-card">
               <h3>Brand Development</h3>
-              <p>Building lasting structures that reflect your values and resonate with your audience.</p>
+              <p>Building lasting impressions that reflect your values and resonate with your audience.</p>
             </div>
           </div>
         </div>

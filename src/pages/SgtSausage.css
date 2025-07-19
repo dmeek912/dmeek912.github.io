@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../../public/sgtsausage/sgtsausage-artboard.JPEG') center/cover;
+  background: url('../../sgtsausage/sgtsausage-artboard.JPEG') center/cover;
   opacity: 0.1;
   z-index: 1;
 }
@@ -71,19 +71,19 @@
   align-items: center;
 }
 
-.about-text h2 {
+.sgtsausage-about-text h2 {
   font-size: 2.5rem;
   color: #8B4513;
   margin-bottom: 2rem;
   font-weight: 600;
 }
 
-.about-text p {
+.sgtsausage-about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-img {
@@ -265,7 +265,7 @@
     width: 150px;
   }
   
-  .about-text h2,
+  .sgtsausage-about-text h2,
   .sgtsausage-services h2,
   .sgtsausage-portfolio h2,
   .mission-text h2 {

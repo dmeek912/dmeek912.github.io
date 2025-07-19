@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../../public/babylon/babylon-consulting.JPEG') center/cover;
+  background: url('../../babylon/babylon-consulting.JPEG') center/cover;
   opacity: 0.1;
   z-index: 1;
 }
@@ -71,19 +71,19 @@
   align-items: center;
 }
 
-.about-text h2 {
+.babylon-about-text h2 {
   font-size: 2.5rem;
   color: #2c3e50;
   margin-bottom: 2rem;
   font-weight: 600;
 }
 
-.about-text p {
+.babylon-about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #555;
   margin-bottom: 1.5rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-img {
@@ -159,13 +159,13 @@
   font-weight: 600;
 }
 
-.portfolio-grid {
+.babylon-portfolio .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
 }
 
-.portfolio-item {
+.babylon-portfolio .portfolio-item {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -173,18 +173,18 @@
   transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover {
+.babylon-portfolio .portfolio-item:hover {
   transform: scale(1.02);
 }
 
-.portfolio-img {
+.babylon-portfolio .portfolio-img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   display: block;
 }
 
-.portfolio-overlay {
+.babylon-portfolio .portfolio-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -196,17 +196,17 @@
   transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover .portfolio-overlay {
+.babylon-portfolio .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
 }
 
-.portfolio-overlay h3 {
+.babylon-portfolio .portfolio-overlay h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
-.portfolio-overlay p {
+.babylon-portfolio .portfolio-overlay p {
   font-size: 0.9rem;
   opacity: 0.9;
 }
@@ -256,7 +256,7 @@
     grid-template-columns: 1fr;
   }
   
-  .portfolio-grid {
+  .babylon-portfolio .portfolio-grid {
     grid-template-columns: 1fr;
   }
   
@@ -264,7 +264,7 @@
     width: 150px;
   }
   
-  .about-text h2,
+  .babylon-about-text h2,
   .babylon-services h2,
   .babylon-portfolio h2,
   .philosophy-text h2 {
@@ -289,7 +289,7 @@
     padding: 1.5rem;
   }
   
-  .portfolio-overlay {
+  .babylon-portfolio .portfolio-overlay {
     padding: 1rem;
   }
 } 

@@ -3,9 +3,6 @@ import React from "react";
 import './Anura.css';
 
 function Anura() {
- const description = `Evolved for the depths. Inspired by the silent precision of frogs in motion, Anura is a high-performance diving gear brand built for those who move with purpose beneath the surface. Informed by the scientific order of amphibians, Anura fuses sleek design with cutting-edge functionality.
-
-Gear that feels natural, streamlined, and intuitive in the water. Advanced materials, minimalist aesthetics - every detail is engineered for depth, clarity, and control. Anura strives to be more than just gear, but also an extension of the diver.`;
 
  return (
    <div className="anura-page">
@@ -22,9 +19,10 @@ Gear that feels natural, streamlined, and intuitive in the water. Advanced mater
      <section className="anura-about">
        <div className="container">
          <div className="about-content">
-           <div className="about-text">
+           <div className="anura-about-text">
              <h2>About Anura</h2>
-             <p>{description}</p>
+             <p>The silent precision of a diving frog. The splendor of a golden toad. Anura is a high-performance diving gear brand built for those who move with purpose beneath the surface. Informed by the scientific order of amphibians, Anura fuses sleek design with cutting-edge functionality.</p>
+             <p>Gear that feels natural, streamlined, and intuitive in the water. Advanced materials, minimalist aesthetics - every detail is engineered for depth, clarity, and control. Anura strives to be more than just gear, but also an enhanced extension of the diver.</p>
            </div>
            <div className="about-image">
              <img src="/anura/anura-mockup.JPEG" alt="Anura Diving Gear" className="about-img" />
@@ -44,7 +42,7 @@ Gear that feels natural, streamlined, and intuitive in the water. Advanced mater
            </div>
            <div className="feature-card">
              <h3>Natural Design</h3>
-             <p>Inspired by amphibian biology, our gear feels like a natural extension of the diver's body, enhancing underwater mobility.</p>
+             <p>Taking inspiration from amphibian biology, our gear feels like an integrated part of the diver's body, taking underwater mobility to the next level.</p>
            </div>
            <div className="feature-card">
              <h3>Advanced Materials</h3>
@@ -83,7 +81,7 @@ Gear that feels natural, streamlined, and intuitive in the water. Advanced mater
          <div className="philosophy-content">
            <div className="philosophy-text">
              <h2>Our Philosophy</h2>
-             <p>Inspired by the silent precision of frogs in motion, Anura represents the perfect harmony between natural design and human engineering. Just as amphibians have evolved to thrive in both aquatic and terrestrial environments, our gear enables divers to move with the same effortless grace beneath the surface.</p>
+             <p>Having noticed the graceful precision of amphibians in motion, Anura represents the perfect harmony between natural design and human engineering. Just as amphibians have evolved to thrive in both aquatic and terrestrial environments, our gear enables divers to move with the same effortless grace beneath the surface.</p>
              <p>We believe that the best diving equipment should feel like a natural extension of the body, enhancing rather than hindering the diver's connection with the underwater world.</p>
            </div>
          </div>
