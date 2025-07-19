@@ -13,43 +13,41 @@ npm run dev
 
 ## Deployment
 
-This project is configured to work with both GitHub Pages and custom domains using relative paths.
+This project automatically adapts to different hosting environments.
 
-### GitHub Pages Deployment
+### GitHub Pages (Automatic)
 
-The deployment is automated via GitHub Actions. When you push to the main branch, it will automatically build and deploy.
+The deployment is fully automated via GitHub Actions. When you push to the main branch, it automatically builds and deploys.
 
-**Manual Deployment:**
+**No manual steps needed!** Just push your changes:
 ```bash
-npm run build
-npm run deploy
+git add .
+git commit -m "Update site"
+git push origin main
 ```
 
-### Custom Domain Deployment
+### Custom Domain (Simple)
 
-When you get a custom domain, you can easily switch configurations:
-
+When you get a custom domain, just run:
 ```bash
-# Switch to custom domain configuration
-node switch-config.js customDomain
+# Build for custom domain
+./deploy.sh custom
 
-# Build and deploy
-npm run build
+# Then upload the dist/ folder to your hosting provider
 ```
 
-### Configuration Switching
+### Manual Deployment
 
-The project includes a utility script to switch between deployment configurations:
-
+For manual builds:
 ```bash
 # For GitHub Pages
-node switch-config.js githubPages
+./deploy.sh github
 
-# For custom domain
-node switch-config.js customDomain
+# For custom domain  
+./deploy.sh custom
 ```
 
-### GitHub Pages Configuration
+## GitHub Pages Configuration
 
 1. Go to your repository settings
 2. Navigate to "Pages" in the sidebar
@@ -63,12 +61,12 @@ The site will be available at: `https://dmeek912.github.io/drexel-portfolio-webs
 - `src/pages/` - React components for each page
 - `public/` - Static assets and images
 - `src/App.jsx` - Main application component with routing
-- `switch-config.js` - Utility script for switching deployment configurations
+- `deploy.sh` - Simple deployment script for different environments
 
 ## Features
 
-- ✅ Works on both GitHub Pages and custom domains
+- ✅ Automatic deployment to GitHub Pages
+- ✅ Easy custom domain deployment
 - ✅ Client-side routing with React Router
-- ✅ Automatic deployment via GitHub Actions
 - ✅ Responsive design
 - ✅ Image optimization
