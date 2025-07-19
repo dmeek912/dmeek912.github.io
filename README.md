@@ -19,14 +19,11 @@ This project is automatically deployed to GitHub Pages when you push to the main
 
 The deployment is fully automated via GitHub Actions. When you push to the main branch, it automatically builds and deploys.
 
-**No manual steps needed!** Just push your changes:
 ```bash
 git add .
 git commit -m "Update site"
 git push origin main
 ```
-
-The site will be available at: `https://dmeek912.github.io/`
 
 ## Project Structure
 
