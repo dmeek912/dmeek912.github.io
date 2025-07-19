@@ -27,14 +27,14 @@ export default function Contact() {
             {renderCheckered(10, false)}
             {renderCheckered(10, true)}
           </div>
-          <img src="/drexel-portfolio-website/drexel-logo2.png" alt="Drexel Logo" style={{ position: 'absolute', bottom: 18, right: 28, height: '2.2em', width: 'auto' }} />
+          <img src="./drexel-logo2.png" alt="Drexel Logo" style={{ position: 'absolute', bottom: 18, right: 28, height: '2.2em', width: 'auto' }} />
         </div>
         {/* Second business card (beige) */}
         <div className="business-card beige alfarn" style={{ alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
           {renderCheckered(13, true)}
           <div style={{ padding: '24px 0', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/drexel-portfolio-website/drexel-logo.png" alt="Drexel Logo" style={{ height: '4em', width: 'auto', marginBottom: '0.2em' }} />
+              <img src="./drexel-logo.png" alt="Drexel Logo" style={{ height: '4em', width: 'auto', marginBottom: '0.2em' }} />
               <span className="drexel-meek">DREXEL<br />MEEK</span>
             </div>
           </div>
