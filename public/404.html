@@ -13,13 +13,27 @@
       var pathSegmentsToKeep = 2;
 
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      var pathname = l.pathname;
+      
+      // For repository-based GitHub Pages, we need to keep the repository name
+      // The pathname will be like /drexel-portfolio-website/about
+      // We want to redirect to /drexel-portfolio-website/?/about
+      var segments = pathname.split('/').filter(function(segment) {
+        return segment.length > 0;
+      });
+      
+      if (segments.length >= 2) {
+        // Keep the repository name (first segment) and add the rest as query
+        var repoName = segments[0];
+        var route = segments.slice(1).join('/');
+        
+        var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          '/' + repoName + '/?/' + route.replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash;
+          
+        l.replace(newUrl);
+      }
     </script>
   </head>
   <body>

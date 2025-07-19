@@ -21,11 +21,12 @@
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).join('?');
-          // For repository-based GitHub Pages, keep the repository name in the path
+          
+          // For repository-based GitHub Pages, reconstruct the full path
           var basePath = '/drexel-portfolio-website';
-          window.history.replaceState(null, null,
-              basePath + decoded + l.hash
-          );
+          var newPath = basePath + '/' + decoded;
+          
+          window.history.replaceState(null, null, newPath + l.hash);
         }
       }(window.location))
     </script>
