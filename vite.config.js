@@ -8,5 +8,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+  },
+  css: {
+    postcss: {
+      plugins: []
+    }
   }
 })
