@@ -83,7 +83,7 @@ export default function Babylon() {
           <div className="philosophy-content">
             <div className="philosophy-text">
               <h2>Our Philosophy</h2>
-              <p>Inspired by the ancient Tower of Babel, we believe that clear communication is the foundation of all human achievement. Just as the tower represented humanity's collective ambition, we help organizations build structures of understanding that elevate their mission and connect with their audience.</p>
+              <p>We believe that clear communication is the foundation of all human achievement. Just as the ancient Tower of Babel represented humanity's collective ambition, we help organizations build structures of understanding that elevate their mission and connect with their audience.</p>
               <p>Our approach combines timeless wisdom with modern strategy, creating communication frameworks that are both enduring and effective.</p>
             </div>
           </div>
