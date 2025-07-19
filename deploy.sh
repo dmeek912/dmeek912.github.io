@@ -7,11 +7,19 @@ DEPLOY_TYPE=${1:-github}
 
 if [ "$DEPLOY_TYPE" = "custom" ]; then
     echo "🚀 Building for custom domain..."
-    BASE_PATH="/" npm run build
+    
+    # Temporarily modify vite config for custom domain
+    sed -i 's|base: '\''/drexel-portfolio-website/'\''|base: '\''/'\''|g' vite.config.js
+    
+    npm run build
+    
+    # Restore vite config
+    sed -i 's|base: '\''/'\''|base: '\''/drexel-portfolio-website/'\''|g' vite.config.js
+    
     echo "✅ Built for custom domain (base: /)"
 else
     echo "🚀 Building for GitHub Pages..."
-    BASE_PATH="/drexel-portfolio-website/" npm run build
+    npm run build
     echo "✅ Built for GitHub Pages (base: /drexel-portfolio-website/)"
 fi
 
