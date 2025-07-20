@@ -60,8 +60,8 @@ function Anura() {
            <div className="portfolio-item">
              <img src="/anura/anura-mockup2.PNG" alt="Anura Product Mockup" className="anura-portfolio-img signage" loading="lazy" />
              <div className="portfolio-overlay">
-               <h3>Diving Equipment</h3>
-               <p>Professional-grade gear designed for serious divers who demand precision and reliability</p>
+               <h3>Appeal To Quality</h3>
+               <p>A professional-grade look to signal a product designed for serious divers who demand precision and reliability</p>
              </div>
            </div>
            <div className="portfolio-item">
