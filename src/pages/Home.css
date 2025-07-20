@@ -1,0 +1,56 @@
+/* Home Page Styles */
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.masthead-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Placeholder background color that complements the image */
+  background-color: #f7deba;
+  /* Ensure dimensions are maintained during loading */
+  min-height: 400px;
+}
+
+.masthead-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .masthead {
+    width: 100%;
+    margin-left: 0;
+    min-height: 200px;
+    height: auto;
+    position: static;
+    overflow: visible;
+    padding: 0;
+  }
+  
+  .masthead-img {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    min-height: 200px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    position: static;
+  }
+} 
