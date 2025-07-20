@@ -41,7 +41,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   /* Placeholder background color that complements the image */
-  background-color: #8B4513;
+  background-color: #f2d881;
   /* Ensure dimensions are maintained during loading */
   min-height: 150px;
   aspect-ratio: 1/1;
@@ -91,20 +91,20 @@
   text-align: left;
 }
 
-.about-img {
+.sgtsausage-about-img {
   width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
   /* Placeholder background color that complements the image */
-  background-color: #CD853F;
+  background-color: #bfbbb2;
   /* Ensure dimensions are maintained during loading */
   min-height: 300px;
   aspect-ratio: 4/3;
 }
 
-.about-img:hover {
+.sgtsausage-about-img:hover {
   transform: scale(1.02);
 }
 
@@ -188,15 +188,23 @@
   transform: scale(1.02);
 }
 
-.portfolio-img {
+.sgtsausage-portfolio-img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   display: block;
-  /* Placeholder background color that complements the image */
+  /* Default placeholder background color */
   background-color: #8B4513;
   /* Ensure dimensions are maintained during loading */
   min-height: 300px;
+}
+
+.sgtsausage-portfolio-img.van {
+  background-color: #f5dca4;
+}
+
+.sgtsausage-portfolio-img.product {
+  background-color: #d3c39f;
 }
 
 .portfolio-overlay {
@@ -328,7 +336,7 @@
     line-height: 1.8;
     margin-bottom: 1.5rem;
   }
-  .about-img,
+  .sgtsausage-about-img,
   .sgtsausage-portfolio .portfolio-img,
   .sgtsausage-logo {
     max-width: 100% !important;

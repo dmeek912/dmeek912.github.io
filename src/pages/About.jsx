@@ -15,8 +15,7 @@ export default function About() {
           <img 
             src="/about/drexel-boat.jpg" 
             alt="Drexel on a boat" 
-            className="about-image"
-            loading="lazy"
+            className="about-image-container color"
           />
         </div>
       </div>

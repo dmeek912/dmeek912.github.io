@@ -72,7 +72,7 @@
   align-items: center;
 }
 
-.about-image {
+.about-image-container {
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -80,13 +80,16 @@
   box-shadow: 0 15px 30px rgba(10, 51, 44, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 3px solid #FAA651;
-  /* Placeholder background color that complements the image */
-  background-color: #FAA651;
   /* Ensure dimensions are maintained during loading without forcing aspect ratio */
-  min-height: 300px;
 }
 
-.about-image:hover {
+.about-image-container.aboutme {
+    /* Placeholder background color */
+    background-color: #b5b4b2;
+    min-height: 750px;
+}
+
+.about-image-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(238, 86, 37, 0.3);
   border-color: #EE5625;
@@ -145,6 +148,9 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .about-text-section {
+    padding: 1rem 1rem 0 1rem;
+  }
   .about-greeting {
     font-size: 2rem;
   }
@@ -154,7 +160,7 @@
   .about-description {
     font-size: 0.95rem;
   }
-  .about-image {
+  .about-image.container {
     max-width: 100%;
   }
 } 
