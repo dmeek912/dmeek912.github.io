@@ -67,7 +67,7 @@ function SgtSausage() {
               <img src="/sgtsausage/sgtsausage-mockup.JPEG" alt="Sgt. Sausage Mockup" className="sgtsausage-portfolio-img product" loading="lazy" />
               <div className="portfolio-overlay">
                 <h3>Product Showcase</h3>
-                <p>Premium charcuterie products designed with military precision and delivered with humor</p>
+                <p>Premium charcuterie products at the ready; it's always military time with Sgt Sausage</p>
               </div>
             </div>
           </div>
