@@ -10,11 +10,41 @@ import Contact from './pages/Contact';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  
   // Close menu on route change
   const location = useLocation();
   useEffect(() => { setMenuOpen(false); }, [location]);
+  
+  // Handle scroll direction
+  useEffect(() => {
+    const handleScroll = () => {
+      // Only apply on mobile devices
+      if (window.innerWidth > 600) {
+        setIsHeaderVisible(true);
+        return;
+      }
+      
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and past 100px
+        setIsHeaderVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up
+        setIsHeaderVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="header">
+    <header className={`header${isHeaderVisible ? '' : ' header-hidden'}`}>
       <div className="header-left">
         <Link to="/" className="site-name">drexel<span className="meek-highlight">meek</span>.com</Link>
       </div>
