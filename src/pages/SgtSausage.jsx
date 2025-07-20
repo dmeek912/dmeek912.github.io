@@ -45,7 +45,7 @@ function SgtSausage() {
             </div>
             <div className="service-card">
               <h3>Tailored Service</h3>
-              <p>Personalized cured meat subscriptions customized to your preferences, giving you exactly what you want, when you want it - down to the last savory detail.</p>
+              <p>Personalized cured meat subscriptions customized to your preferences, giving you exactly what you want, when you want it - down to the last savory moment.</p>
             </div>
           </div>
         </div>
