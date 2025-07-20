@@ -40,6 +40,11 @@
   margin-bottom: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  /* Placeholder background color that complements the image */
+  background-color: #1e3c72;
+  /* Ensure dimensions are maintained during loading */
+  min-height: 150px;
+  aspect-ratio: 1/1;
 }
 
 .hero-title {
@@ -92,6 +97,11 @@
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
+  /* Placeholder background color that complements the image */
+  background-color: #006994;
+  /* Ensure dimensions are maintained during loading */
+  min-height: 300px;
+  aspect-ratio: 4/3;
 }
 
 .about-img:hover {
@@ -183,6 +193,10 @@
   height: 300px;
   object-fit: cover;
   display: block;
+  /* Placeholder background color that complements the image */
+  background-color: #1e3c72;
+  /* Ensure dimensions are maintained during loading */
+  min-height: 300px;
 }
 
 .portfolio-overlay {

@@ -80,6 +80,10 @@
   box-shadow: 0 15px 30px rgba(10, 51, 44, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 3px solid #FAA651;
+  /* Placeholder background color that complements the image */
+  background-color: #FAA651;
+  /* Ensure dimensions are maintained during loading without forcing aspect ratio */
+  min-height: 300px;
 }
 
 .about-image:hover {

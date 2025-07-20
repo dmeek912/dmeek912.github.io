@@ -138,6 +138,12 @@
   right: 28px;
   height: 2.2em;
   width: auto;
+  /* Placeholder background color that complements the image */
+  background-color: #f7deba;
+  /* Ensure dimensions are maintained during loading */
+  min-height: 2.2em;
+  min-width: 2.2em;
+  border-radius: 4px;
 }
 
 .business-card-center {
@@ -152,6 +158,12 @@
   height: 4em;
   width: auto;
   margin-bottom: 0.2em;
+  /* Placeholder background color that complements the image */
+  background-color: #0A332C;
+  /* Ensure dimensions are maintained during loading */
+  min-height: 4em;
+  min-width: 4em;
+  border-radius: 8px;
 }
 
 .business-card-logo-wrapper {

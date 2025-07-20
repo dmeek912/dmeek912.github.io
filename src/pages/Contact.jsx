@@ -29,14 +29,14 @@ export default function Contact() {
             {renderCheckered(10, false)}
             {renderCheckered(10, true)}
           </div>
-          <img src="/drexel-logo2.png" alt="Drexel Logo" className="business-card-logo" />
+          <img src="/drexel-logo2.png" alt="Drexel Logo" className="business-card-logo" loading="lazy" />
         </div>
         {/* Second business card */}
         <div className="business-card beige alfarn">
           {renderCheckered(13, true)}
           <div className="business-card-center">
             <div className="business-card-logo-wrapper">
-              <img src="/drexel-logo.png" alt="Drexel Logo" className="business-card-logo-large" />
+              <img src="/drexel-logo.png" alt="Drexel Logo" className="business-card-logo-large" loading="lazy" />
               <span className="drexel-meek">DREXEL<br />MEEK</span>
             </div>
           </div>

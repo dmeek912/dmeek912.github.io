@@ -11,7 +11,7 @@ export default function Babylon() {
       {/* Hero Section */}
       <section className="babylon-hero">
         <div className="hero-content">
-          <img src="/babylon/babylon-logo.JPEG" alt="Babylon Consulting Logo" className="babylon-logo" />
+          <img src="/babylon/babylon-logo.JPEG" alt="Babylon Consulting Logo" className="babylon-logo" loading="lazy" />
           <h1 className="hero-title">Babylon Consulting</h1>
           <p className="hero-subtitle">Where Strategy Meets Communication</p>
         </div>
@@ -27,7 +27,7 @@ export default function Babylon() {
               <p>In a world often clouded by noise, Babylon helps organizations align their message, bridge internal gaps, and build structures that last. With a visual identity grounded in timeless forms and a narrative that honors the power in language, Babylon Consulting redefines what it means to truly understand and be understood.</p>
             </div>
             <div className="about-image">
-              <img src="/babylon/babylon-consulting.JPEG" alt="Babylon Consulting" className="about-img" />
+              <img src="/babylon/babylon-consulting.JPEG" alt="Babylon Consulting" className="about-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -60,14 +60,14 @@ export default function Babylon() {
           <h2>Portfolio</h2>
           <div className="portfolio-grid">
             <div className="portfolio-item">
-              <img src="/babylon/babylon-letterhead-mockup.JPEG" alt="Babylon Letterhead Mockup" className="portfolio-img" />
+              <img src="/babylon/babylon-letterhead-mockup.JPEG" alt="Babylon Letterhead Mockup" className="portfolio-img" loading="lazy" />
               <div className="portfolio-overlay">
                 <h3>Letterhead Design</h3>
                 <p>Professional stationery that reflects the firm's timeless approach</p>
               </div>
             </div>
             <div className="portfolio-item">
-              <img src="/babylon/babylon-sign.JPEG" alt="Babylon Sign" className="portfolio-img" />
+              <img src="/babylon/babylon-sign.JPEG" alt="Babylon Sign" className="portfolio-img" loading="lazy" />
               <div className="portfolio-overlay">
                 <h3>Environmental Design</h3>
                 <p>Physical manifestations of the brand in built environments</p>

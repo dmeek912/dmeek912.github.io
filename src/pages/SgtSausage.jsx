@@ -8,7 +8,7 @@ function SgtSausage() {
       {/* Hero Section */}
       <section className="sgtsausage-hero">
         <div className="hero-content">
-          <img src="/sgtsausage/sgtsausage-logo.JPEG" alt="Sgt. Sausage Logo" className="sgtsausage-logo" />
+          <img src="/sgtsausage/sgtsausage-logo.JPEG" alt="Sgt. Sausage Logo" className="sgtsausage-logo" loading="lazy" />
           <h1 className="hero-title">SGT Sausage</h1>
           <p className="hero-subtitle">Reporting for Duty</p>
         </div>
@@ -24,7 +24,7 @@ function SgtSausage() {
               <p>SGT Sausage is a cured meat subscription service with a mission to bring bold flavors and even bolder laughs to your doorstep. Our team of experts will work closely with you to understand your needs and preferences, and deliver the perfect combination of charcuterie and comedy that you'll love.</p>
             </div>
             <div className="about-image">
-              <img src="/sgtsausage/sgtsausage-artboard.JPEG" alt="Sgt. Sausage Artboard" className="about-img" />
+              <img src="/sgtsausage/sgtsausage-artboard.JPEG" alt="Sgt. Sausage Artboard" className="about-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -57,14 +57,14 @@ function SgtSausage() {
           <h2>Our Operations</h2>
           <div className="portfolio-grid">
             <div className="portfolio-item">
-              <img src="/sgtsausage/sgtsausage-van.JPEG" alt="Sgt. Sausage Van" className="portfolio-img" />
+              <img src="/sgtsausage/sgtsausage-van.JPEG" alt="Sgt. Sausage Van" className="portfolio-img" loading="lazy" />
               <div className="portfolio-overlay">
                 <h3>Mobile Operations</h3>
                 <p>Our military-grade delivery vehicle brings top-tier charcuterie and comedy directly to your location</p>
               </div>
             </div>
             <div className="portfolio-item">
-              <img src="/sgtsausage/sgtsausage-mockup.JPEG" alt="Sgt. Sausage Mockup" className="portfolio-img" />
+              <img src="/sgtsausage/sgtsausage-mockup.JPEG" alt="Sgt. Sausage Mockup" className="portfolio-img" loading="lazy" />
               <div className="portfolio-overlay">
                 <h3>Product Showcase</h3>
                 <p>Premium charcuterie products designed with military precision and delivered with humor</p>

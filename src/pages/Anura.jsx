@@ -9,7 +9,7 @@ function Anura() {
      {/* Hero Section */}
      <section className="anura-hero">
        <div className="hero-content">
-         <img src="/anura/anura-logo.JPEG" alt="Anura Logo" className="anura-logo" />
+         <img src="/anura/anura-logo.JPEG" alt="Anura Logo" className="anura-logo" loading="lazy" />
          <h1 className="hero-title">Anura</h1>
          <p className="hero-subtitle">Evolved for the Depths</p>
        </div>
@@ -25,7 +25,7 @@ function Anura() {
              <p>Gear that feels natural, streamlined, and intuitive in the water. Advanced materials, minimalist aesthetics - every detail is engineered for depth, clarity, and control. Because Anura strives to be more than just gear: it becomes an extension of the diver.</p>
            </div>
            <div className="about-image">
-             <img src="/anura/anura-mockup.JPEG" alt="Anura Diving Gear" className="about-img" />
+             <img src="/anura/anura-mockup.JPEG" alt="Anura Diving Gear" className="about-img" loading="lazy" />
            </div>
          </div>
        </div>
@@ -58,14 +58,14 @@ function Anura() {
          <h2>Product Showcase</h2>
          <div className="portfolio-grid">
            <div className="portfolio-item">
-             <img src="/anura/anura-mockup2.PNG" alt="Anura Product Mockup" className="portfolio-img" />
+             <img src="/anura/anura-mockup2.PNG" alt="Anura Product Mockup" className="portfolio-img" loading="lazy" />
              <div className="portfolio-overlay">
                <h3>Diving Equipment</h3>
                <p>Professional-grade gear designed for serious divers who demand precision and reliability</p>
              </div>
            </div>
            <div className="portfolio-item">
-             <img src="/anura/anura-mockup3.JPEG" alt="Anura Gear Mockup" className="portfolio-img" />
+             <img src="/anura/anura-mockup3.JPEG" alt="Anura Gear Mockup" className="portfolio-img" loading="lazy" />
              <div className="portfolio-overlay">
                <h3>Streamlined Design</h3>
                <p>Minimalist aesthetics that prioritize function while maintaining visual appeal</p>
