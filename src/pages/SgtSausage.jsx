@@ -45,7 +45,7 @@ function SgtSausage() {
             </div>
             <div className="service-card">
               <h3>Tailored Service</h3>
-              <p>Personalized cured meat subscriptions customized to your preferences, giving you exactly what you want, when you want it - down to the last savory detail.</p>
+              <p>Personalized cured meat subscriptions customized to your preferences, giving you exactly what you want, when you want it - down to the last savory moment.</p>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ function SgtSausage() {
               <img src="/sgtsausage/sgtsausage-mockup.JPEG" alt="Sgt. Sausage Mockup" className="sgtsausage-portfolio-img product" loading="lazy" />
               <div className="portfolio-overlay">
                 <h3>Product Showcase</h3>
-                <p>Premium charcuterie products designed with military precision and delivered with humor</p>
+                <p>Premium charcuterie products at the ready; it's always military time with Sgt Sausage</p>
               </div>
             </div>
           </div>
