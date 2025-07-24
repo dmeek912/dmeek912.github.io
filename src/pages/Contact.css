@@ -18,7 +18,7 @@
 
 .business-card {
   width: 370px;
-  height: 210px;
+  aspect-ratio: 370 / 210;
   background: #0A332C;
   color: #f7deba;
   box-shadow: 24px 40px 48px rgba(10, 51, 44, 0.25), 4px 8px 16px rgba(0,0,0,0.10);
@@ -115,8 +115,10 @@
 }
 
 .checkered-square {
-  width: 24px;
-  height: 24px;
+  width: 8%;
+  aspect-ratio: 1 / 1;
+  min-width: 16px;
+  max-width: 32px;
   background: #f7deba;
   margin-right: 0;
 }
@@ -178,7 +180,9 @@
   
   .business-card {
     width: 320px;
-    height: 180px;
+    /* Remove fixed height and min-height, use aspect-ratio */
+    /* height: 180px; */
+    aspect-ratio: 370 / 210;
     padding: 20px 24px 16px 24px;
   }
 }
@@ -191,8 +195,10 @@
   .business-card {
     width: 95vw;
     max-width: 320px;
-    height: auto;
-    min-height: 160px;
+    /* Remove fixed height and min-height, use aspect-ratio */
+    /* height: auto; */
+    /* min-height: 160px; */
+    aspect-ratio: 370 / 210;
     padding: 16px 20px 12px 20px;
   }
   
@@ -224,7 +230,49 @@
   }
   
   .checkered-square {
-    width: 20px;
-    height: 20px;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    min-width: 12px;
+    max-width: 24px;
+  }
+} 
+
+.simple-contact-widget {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .simple-contact-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0A332C;
+    color: #f7deba;
+    border-radius: 18px;
+    padding: 2.5em 1.5em;
+    font-size: 1.1em;
+    box-shadow: 0 4px 24px rgba(10, 51, 44, 0.15);
+    margin: 2em 0.5em;
+    gap: 0.7em;
+  }
+  .simple-contact-widget .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+  }
+  .simple-contact-widget .role {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0.7em;
+  }
+  .simple-contact-widget .contact,
+  .simple-contact-widget .email {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .business-card,
+  .contact-cards-wrapper {
+    display: none !important;
   }
 } 

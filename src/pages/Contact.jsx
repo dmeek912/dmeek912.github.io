@@ -1,6 +1,29 @@
 import './Contact.css';
+import { useState, useEffect } from 'react';
 
 export default function Contact() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 480);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <div className="contact-container">
+        <div className="simple-contact-widget">
+          <div className="name">DREXEL MEEK</div>
+          <div className="role">GRAPHIC DESIGNER</div>
+          <div className="contact">(405) 513-2161</div>
+          <div className="email">DREXELMEEK912@GMAIL.COM</div>
+        </div>
+      </div>
+    );
+  }
+
   // Helper to render checkered row
   const renderCheckered = (count, reverse) => (
     <div className="checkered">
